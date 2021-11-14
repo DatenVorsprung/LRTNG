@@ -1,0 +1,19 @@
+Function fdyn(dth, dx, th, x)
+    M = 1.0;
+    g = 9.81;
+    h = 0.0001;
+    l = 1.0;
+    m = 0.001;
+        
+    
+    f = -1.1 * M * g * th - dth;
+    
+    fdth = 1.0 / (l*(M+m*sin(th)*sin(th))) * (f * cos(th) - m*l*dth*dth*cos(th)*sin(th) + (m+M)*g*sin(th));
+    fdx = 1.0 / (M+m*sin(th)*sin(th)) * ( f + m*sin(th) * (-l * dth*dth + g*cos(th)) );
+
+    fx = dx;
+
+    fth = dth;
+
+    return (fdth, fdx, fth, fx);
+end

@@ -1,0 +1,16 @@
+Function fdyn(x1,x2, x3, x4)
+
+	m = 1;
+	l = 3;
+	kp1 = 2;
+	kp2 = 1;
+	kd1 = 2;
+	kd2 = 1;	
+	
+	fx1= x3;
+	fx2= x4;
+	fx3=(-2*m*x2*x3*x4-kp1*x1-kd1*x3)/(m*x2*x2+l/3)+(kp1*kp1)/(m*x2*x2+l/3);
+	fx4=x2*x3*x3-kp2*x2/m-kd2*x4/m+kp2*kp2/m;
+	
+	return (fx1, fx2, fx3, fx4);
+end

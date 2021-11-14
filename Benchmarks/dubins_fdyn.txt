@@ -1,0 +1,11 @@
+Function fdyn(x,y,th,t)
+
+	v=1;
+
+	fx=v*cos(th);
+	fy=v*sin(th);
+	fth=x*sin(t);
+	ft=1;
+	
+	return (fx, fy, fth, ft);
+end

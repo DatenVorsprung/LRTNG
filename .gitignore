@@ -1,0 +1,15 @@
+# PyCharm IDEA
+/.idea
+
+# Mac OS
+/.DS_Store
+
+# cmake files and directories
+/CMakeFiles
+/cmake_install.cmake
+/Testing
+/LRTNG
+/LRTNG.cbp
+/CMakeCache.txt
+/Makefile
+/.obj

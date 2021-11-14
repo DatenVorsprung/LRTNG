@@ -1,0 +1,7 @@
+Function fdyn(x,y)
+
+	fx=y;
+	fy=(x*x - 1)*y - x;
+	
+	return (fx;fy);
+end

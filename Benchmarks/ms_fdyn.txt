@@ -1,0 +1,9 @@
+Function fdyn(x1,x2)
+
+	sig_x1 = 0.5*(1 + tanh(50*x1 - 5));
+
+	fx1=x2*x1^2* (1 - x1)/0.3 - x1/6;	
+	fx2=sig_x1 * (-x2/150) + (1 - sig_x1)*(1 - x2)/20;
+	
+	return (fx1, fx2);
+end

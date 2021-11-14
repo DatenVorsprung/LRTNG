@@ -1,0 +1,10 @@
+Function fdyn(x,y)
+
+	a=1;
+	b=1.5;
+
+	fx=a+ x^2*y-(b+1)*x;
+	fy=b*x-x^2 *y;
+	
+	return (fx, fy);
+end
